@@ -1354,3 +1354,8 @@ h1 {
 #footer .footer-links a:hover {
   color: #1dc8cd;
 }
+
+#features {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
