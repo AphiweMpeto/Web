@@ -1,13 +1,4 @@
-/**
-* Template Name: Avilon - v4.5.0
-* Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   background: #fff;
   color: #666666;
@@ -528,7 +519,7 @@ section {
   }
 }
 
-/* About Us Section
+/* About Section
 --------------------------------*/
 #about {
   padding: 60px 0;
@@ -582,7 +573,7 @@ section {
   padding-bottom: 10px;
 }
 
-/* Product Featuress Section
+/* History Section
 --------------------------------*/
 h1 {
 	 	  
@@ -635,7 +626,7 @@ h1 {
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
 	border:solid 2px #fff;
        	 
-	background: linear-gradient(to right, #E91E63 0%,#fff 100%); 
+	background: linear-gradient(to right, #1dc8cd  0%,#fff 100%); 
 }
 
 #progress-bar-container li {
@@ -762,57 +753,64 @@ h1 {
 	}
 }
 
+@media (min-width: 769px) {
+  #history .features-img {
+    padding-top: 120px;
+    margin-top: -200px;
+  }
+
+
 /*#features {
   background: #fff;
   padding: 60px 0 0 0;
   overflow: hidden;
 }
-#features .features-img {
+#history .features-img {
   text-align: center;
   padding-top: 20px;
 }
 @media (min-width: 769px) {
-  #features .features-img {
+  #history .features-img {
     padding-top: 120px;
     margin-top: -200px;
   }
 }
-#features .features-img img {
+#history .features-img img {
   max-width: 100%;
 }
-#features .box {
+#history .box {
   margin-bottom: 15px;
   text-align: center;
-}
-#features .icon {
+}*/
+#history .icon {
   margin-bottom: 10px;
 }
-#features .icon i {
+#history .icon i {
   color: #666666;
   font-size: 40px;
   transition: 0.5s;
 }
-#features .icon i:before {
+#history .icon i:before {
   background: #1dc8cd;
   background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#features .title {
+#history .title {
   font-weight: 300;
   margin-bottom: 15px;
   font-size: 22px;
 }
-#features .title a {
+#history .title a {
   color: #111;
 }
-#features .description {
+#history .description {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 10px;
 }
-#features .section-description {
+#history .section-description {
   padding-bottom: 10px;
 }*/
 
@@ -1116,86 +1114,103 @@ h1 {
   transition: 0.6s;
 }
 
-/* Our Team Section
+/* Testimonials Section
 --------------------------------*/
-#team {
-  padding: 60px 0;
-  overflow: hidden;
-}
-#team .member {
+.testimonials {
+  background: #fff;
   text-align: center;
-  margin-bottom: 20px;
+  width: 95%;
+  max-width: 600px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
+.title {
+  font-size: 1.5rem;
 }
-#team .member .pic img {
-  max-width: 100%;
-}
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-#team .member .social {
-  margin-top: 15px;
-}
-#team .member .social a {
-  color: #b3b3b3;
-}
-#team .member .social a:hover {
-  color: #1dc8cd;
-}
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+.description {
+  font-size: 0.95rem;
+  color: #333;
 }
 
-/* Gallery Section
---------------------------------*/
-#gallery {
-  background: #fff;
-  padding: 60px 0 0 0;
-  overflow: hidden;
-}
-#gallery .container-fluid {
-  padding: 0px;
-}
-#gallery .gallery-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: all ease-in-out 0.4s;
-}
-#gallery .gallery-item {
-  overflow: hidden;
+.slider-container {
+  margin-top: 2rem;
+  margin: 2rem auto 0 auto;
   position: relative;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
+  overflow: hidden;
 }
-#gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-  width: 100%;
+.slider {
+  display: flex;
+  flex: 0 0 1;
+  width: 300%; /* Depends On slide-box Length * 100 */
+  transition: all 0.5s linear;
 }
-#gallery .gallery-item:hover img {
-  transform: scale(1.1);
+.slide-box {
+  padding: 0 80px;
 }
-#gallery .gallery-item:hover .gallery-overlay {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.7);
+.slide-box .comment {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.86rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-weight: 400;
+}
+.slide-box .comment::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.slide-box img {
+  max-width: 60px;
+  border-radius: 50%;
+}
+.slide-box .name {
+  font-size: 1rem;
+}
+.slide-box .job {
+  font-size: 0.7rem;
+  color: #8d8e97;
+  font-weight: 400;
+}
+
+.control-slider {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+.btn-left {
+  left: 10px;
+}
+.btn-right {
+  right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .slide-box {
+    padding: 0 55px;
+  }
+}
+
+#testimonials {
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 /* Contact Section
@@ -1355,7 +1370,7 @@ h1 {
   color: #1dc8cd;
 }
 
-#features {
+#history{
   padding-bottom: 50px;
   padding-top: 50px;
 }
